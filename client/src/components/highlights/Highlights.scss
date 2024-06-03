@@ -1,0 +1,101 @@
+.menu__wrapper {
+    padding: 20px 0;
+    width: 100%;
+    &>p {
+        text-transform: uppercase;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        color: var(--primary-font-dark-color);
+    }
+    .line {
+        margin: 18px 0;
+    }
+}
+
+.menu__list {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+ flex-wrap: wrap;
+    .menu__item {
+        max-width: 358px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 12px 8px;
+        position: relative;
+
+        p:first-child {
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 13px;
+            text-align: center;
+            color: var(--primary-font-dark-color);
+            margin-bottom: 13px;
+
+            span {
+                color: red;
+            }
+        }
+
+        &>p {
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: center;
+            color: var(--primary-font-dark-color);
+        }
+
+        p:last-child {
+            font-size: 15.75px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: center;
+            color: var(--primary-font-dark-color);
+            margin-top: 10px;
+            max-width: 300px;
+        }
+    }
+}
+
+.menu__item:hover {
+        
+    button {
+        background-color: var(--primary-light-color);
+        transition: 0.3s ease-in-out;
+
+        .icon {
+            color: var(--primary-line-color);
+            transition: 0.3s ease-in-out;
+        }
+    }
+}
+
+.menu__img {
+    position: relative;
+
+    img {
+        max-width: 333px;
+    }
+
+    button {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        padding: 5px 20px;
+        background-color: var(--primary-button-hover-color);
+        border: 1px solid var(--primary-light-color);
+        transition: 0.3s ease-in-out;
+
+        .icon {
+            color: var(--primary-font-white);
+            font-size: 30px;
+        }
+    }
+}
+

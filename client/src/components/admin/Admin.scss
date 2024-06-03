@@ -1,0 +1,16 @@
+.admin{
+    display: flex;
+}
+
+.admin__content{
+    flex: 1;
+}
+
+.admin__data{
+    padding: 50px;
+
+    h1{
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,34 @@
+@import '../../scss/variables.scss'; 
+.collections_banner_wrapper {
+    margin-top: 200px;
+    width: 100% !important;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+  }
+  .banner_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: 1;
+    background: var(--primary-black-background);
+  }
+  .collections_banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 80% auto;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+  }
+  .collections_banner_title {
+    color: var(--primary-font-white);
+    font-size: 34px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 200;
+    z-index: 2;
+  }

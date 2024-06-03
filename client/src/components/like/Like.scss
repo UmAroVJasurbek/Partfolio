@@ -1,0 +1,148 @@
+.like-container {
+    width: 100%;
+    margin-top: 228px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.like-bg-img {
+    width: 100%;
+    height: 500px;
+    background-image: url("../../assets/images/wishlist.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.like-bg-img2 {
+    width: 220px;
+    height: 280px;
+    background-image: url("../../assets/images/Add_Watch.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+
+.like-title-text {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.like-line {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-bottom: 1px solid #a8927b;
+    opacity: 0.5;
+}
+
+.like-title {
+    color: white;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+    height: 35px;
+    line-height: 36px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.like-title2 {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 160px;
+    margin-bottom: 20px;
+}
+
+.like-title-p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.like__buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.like-btn-text {
+    width: 230px;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    color: #dcd3ca;
+    height: 60px;
+    cursor: pointer;
+}
+
+.like-btn-text p {
+    margin-left: 15px;
+}
+
+.like-btn-text:hover {
+    background: rgb(237, 237, 237);
+}
+
+.like-btn-text2 {
+    width: 230px;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    color: #a8927b;
+    height: 60px;
+    cursor: pointer;
+}
+
+.like-btn-text2 p {
+    margin-left: 15px;
+}
+
+.like-btn-text2:hover {
+    background: rgb(237, 237, 237);
+}
+
+.like-bg {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #a8927b;
+}
+
+.like-hover-frame:hover{
+    opacity: 0.7;
+}
+.like-bg-icon {
+    font-size: 300px;
+}
+
+.like-bg-text {
+    width: 220px;
+    height: 30px;
+    color: #ab947d;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}

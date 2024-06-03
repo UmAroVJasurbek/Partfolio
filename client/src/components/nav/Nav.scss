@@ -1,0 +1,135 @@
+.nav{
+  background-color: var(--primary-light-color);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.nav__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nav__top{
+  overflow: hidden;
+  width: 100%;
+  height: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+
+.nav__bottom{
+  width: 100%;
+}
+
+.nav__logo{
+  opacity: 1;
+}
+
+.nav__logo > svg{
+  width: 165px;
+}
+
+.navigation-home > svg{
+  display: none;
+  width: 30px !important; 
+}
+
+.nav__list{
+  display: flex;
+  li{
+      cursor: pointer;
+      position: relative;
+      font-size: 20px;
+      text-transform: uppercase;
+      padding: 35px 24px;
+      color: var(--primary-font-light-color);
+      display: flex;
+      align-items: center;
+      transition: .2s;
+      &:first-child{
+          text-transform: capitalize;
+      }
+
+      a{
+          font-style: italic;
+          font-size: 16px;
+          color: var(--primary-font-light-color);
+      }
+
+      svg{
+          width: 20px;
+      }
+
+      &:hover{
+          color: var(--primary-font-white);
+          a{
+              color: var(--primary-font-white);
+          }
+          background-color: var(--primary-hover-color);
+
+          svg *{
+              fill: var(--primary-font-white) !important;
+              stroke: var(--primary-font-white) !important;
+          }
+
+          &::after{
+              background-color: var(--primary-light-color);
+          }
+      }
+
+      &::after{
+          content: "";
+          position: absolute;
+          width: 80%;
+          left: 10%;
+          bottom: 0;
+          height: 3px;
+          background-color: var(--primary-light-color);
+      }
+
+      svg + span{
+          margin-left: 5px;
+          font-style: italic;
+      }
+  }
+
+  .active::after{
+      background-color: var(--primary-hover-color); 
+      *{
+          fill: var(--primary-font-white);
+      }
+   }
+
+   .item-active{
+      background-color: var(--primary-hover-color);
+      *{
+          fill: var(--primary-font-white);
+      }
+   }
+}
+
+.nav[data-is-navbar-pinned="true"]{
+  .nav__top{
+      height: 0;
+
+      .nav__logo{
+          opacity: 0;
+      }
+  }
+
+  .navigation-home > svg{
+      display: block;
+  }
+
+  .navigation-home span{
+      display: none;
+  }
+}

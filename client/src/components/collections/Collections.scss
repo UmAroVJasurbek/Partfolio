@@ -1,0 +1,97 @@
+@import "../../scss/variables.scss";
+.collections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .collections_description {
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    // padding: 30px 20px;
+    h4 {
+      color: var(--primary-font-light-color);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 16px;
+      padding-bottom: 20px;
+    }
+    h6 {
+      font-size: 18px;
+      margin-top: 15px;
+      font-style: italic;
+      font-weight: 700;
+    }
+    p {
+      max-width: 650px;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  }
+  .watches {
+    width: 100%;
+    max-width: 1420px;
+    margin-top: 50px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .watch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .watch_picture{
+    width: 220px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    img{
+        width: 180px;
+    }
+      &::after {
+      content: "";
+      position: absolute;
+      width: 40%;
+      left: 30%;
+      bottom: 0;
+      height: 3px;
+      background: var(--primary-light-color);
+    // background: red;
+    
+  }
+  &:hover{
+    &::after{
+        background: var(--primary-line-color);
+    }
+    }
+  }
+  .watch_description{
+    padding: 10px;
+    h5{
+     font-size: 15px;
+     color: var(--primary-dark-color);
+    }
+    p{
+        font-size: 12px;
+        line-height: 12px;
+        color: var(--primary-line-color);
+        font-style: italic;
+        text-align: center;
+    }
+  }
+  .row-separator {
+    width: 85%; /* Ensures the line spans the entire width */
+    height: 1.5px; /* Adjust as needed */
+    background-color: var(--primary-line-color); /* Color of the line */
+    margin: 20px 0; /* Adds spacing above and below the line */
+    border: none; /* Removes default border */
+  }  
+}

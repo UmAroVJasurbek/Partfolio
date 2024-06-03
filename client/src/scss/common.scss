@@ -1,0 +1,21 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    &--sm{
+        max-width: 800px;
+    }
+
+    &--lg{
+        max-width: 1800px;
+    }
+}
+
+.link{
+    padding: 10px 24px;
+    display: inline-block;
+    text-transform: uppercase;
+    &--outline{
+        color: #fff;
+        border: 1px solid var(--primary-font-light-color);
+    }
+}

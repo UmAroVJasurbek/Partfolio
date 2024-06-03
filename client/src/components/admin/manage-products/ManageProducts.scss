@@ -1,0 +1,49 @@
+@import '../../../scss/variables.scss';
+
+.manage-products_navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    background: var(--primary-hover-color);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-bottom: 30px;
+    h1{
+        font-size: 30px;
+        font-weight: 500;
+        color: var(--primary-font-white);
+        line-height: 35px;
+        letter-spacing: 1.5px;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        gap: 10px;
+        padding: 10px;
+        li{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 22px;
+            position: relative;
+        }
+        a{
+            color: #fff;
+            padding: 15px 25px;
+            padding-bottom: 40px;
+            border-radius: 5px;
+        }
+        a:hover{
+            color: var(--primary-hover-color);
+            background: var(--primary-light-color);
+        }
+        a.active{
+            color: var(--primary-hover-color);
+            background: var(--primary-light-color);
+        }
+    }
+}
